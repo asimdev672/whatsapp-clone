@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+$heading: #075e54;
+$btn-succes: #25d366;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: 'Poppins', sans-serif;
+}
+
+
+@mixin button {
+    background: $btn-succes;
+    padding: 7px 30px;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    border: 2px solid #1dcc5d;
+}
+
+@mixin status-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+//---------------StartUp
+.StartUp {
+    h3 {
+        color: $heading;
+    }
+
+    .start_log {
+        width: 285px;
+        height: auto;
+    }
+
+    .StartUp__btn {
+        @include button;
+
+        &:hover {
+            background-color: #1dcc5d;
+        }
+    }
+
+    .StartUp__last__p {
+        color: $btn-succes;
+        font-size: larger;
+        font-weight: 700;
+    }
+
+}
+
+//---------------Login
+.Login {
+    font-family: 'Poppins', sans-serif;
+
+    .Login__heading {
+        color: $heading;
+        font-weight: 700;
+        font-size: large;
+    }
+
+    .AddAPhotoIcon_outer_div {
+        display: inline-block;
+        width: 115px;
+        height: 115px;
+        border-radius: 500px;
+        background-color: #e0dede;
+
+        .icon {
+            font-size: xxx-large;
+            margin-top: 30px;
+        }
+    }
+
+    input {
+        border: none;
+        outline: none;
+        border-bottom: 2px solid $heading;
+        width: 48%;
+        padding-left: 5px;
+
+        &::placeholder {
+            font-size: 15px;
+            letter-spacing: 0.3px;
+        }
+    }
+
+    .emoji__icon {
+        font-size: larger;
+    }
+
+    button {
+        position: fixed;
+        bottom: 20px;
+        margin: 0px -48px;
+    }
+
+    .Login__btn {
+        @include button;
+
+        &:hover {
+            background-color: #1dcc5d;
+        }
+    }
+}
+
+//---------------Header
+.Header {
+    background: $heading;
+    color: white;
+    padding: 12px 12px 0px 12px;
+
+
+    .search_icon {
+        font-size: x-large;
+        margin: 0px 12px;
+    }
+
+    .accout_icon {
+        color: $btn-succes;
+        font-size: x-large;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.Header--B {
+    background: $heading;
+    color: white;
+    padding: 12px 12px 0px 12px;
+    position: sticky;
+    top: 0;
+
+    a {
+        text-decoration: none;
+        color: white;
+        width: 100vw;
+        padding:10px 0px 10px 50px;
+        // padding: 26px 0px 8px 41px;
+
+        &:hover {
+            color: white;
+            background: #4e6456;
+            transition:background 2.3s ;
+        }
+
+    }
+
+}
+//------------Chat
+.Chat{
+    button{
+    position: fixed;
+    bottom: 18px;
+    right: 22px;
+    height: 55px;
+    width: 55px;
+    color: white;
+    background: $btn-succes;
+    border: none;
+    border-radius: 100px;
+    font-size: x-large;
+
+    a{
+        color: white;
+        &:hover{
+            color: white;
+        }
+    }
+    }
+}
+//---------------FriendChat
+.FriendChat {
+    padding: 1px 12px;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .FriendChat__outerdiv {
+        .logo {
+            width: 61px;
+            height: 60px;
+            border-radius: 50px;
+        }
+
+        .msg {
+            font-size: small;
+            color: grey;
+
+        }
+    }
+}
+
+//---------------UserId
+.UserId {
+    .heading {
+
+        color: white;
+        background: $heading;
+
+        a {
+            color: white;
+            font-size: larger;
+
+        }
+    }
+
+    .Account {
+        font-size: 120px;
+        margin-top: 70px;
+
+        .icon {
+            color: $heading;
+        }
+    }
+
+    .information {
+        width: 100vw;
+        padding-left: 30px;
+
+        .user--information {
+            width: 100vw;
+            margin-bottom: 10px;
+            padding: 12px;
+
+            .user--info_heading {
+                color: gray;
+            }
+
+            .user--info_border {
+                border-bottom: 1px solid gray;
+            }
+        }
+
+        .edit--info {
+            color: gray;
+            font-size: x-large;
+            font-weight: 600;
+        }
+    }
+
+    .footer {
+        position: relative;
+        bottom: -46px;
+    }
+}
+
+//-------------------CommonChat
+.CommonChat {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://picsum.photos/1000/1000?grayscale=');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+
+    .CommonChat--header {
+        position: sticky;
+        top: 0;
+        width: 100vw;
+        background: $heading;
+        color: white;
+        padding: 8px 8px 0px 8px;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        .backword-arrow {
+            font-size: x-large;
+        }
+
+        .image--icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+        }
+
+        .header--center_div {
+            width: 100vw;
+
+            h5 {
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 2px;
+            }
+
+            small {
+                color: gray;
+                font-weight: 100;
+            }
+        }
+    }
+
+    //----------------Message_Show
+    .Message_Show {
+        overflow: auto;
+        height: 83vh;
+    }
+
+    .Real_time_chat {
+        p {
+            background: $btn-succes;
+            color: white;
+            display: inline-block;
+            min-width: 129px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            padding: 2px 8px;
+            font-size: 15px;
+
+            small {
+                display: block;
+            }
+        }
+
+    }
+
+    //----------------Chat_Sction
+    .Message_input_main {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        padding: 12px 12px 0px 12px;
+        color: white;
+
+        input {
+            width: 90%;
+            line-height: 40px;
+            border: none;
+            border-radius: 50px;
+            outline: none;
+            padding: 3px 40px;
+        }
+
+        .Message_input_icon_A {
+            font-size: x-large;
+            position: fixed;
+            left: 25px;
+            bottom: 16px;
+            color: gray;
+        }
+
+        .Message_input_icon_B {
+            font-size: x-large;
+            color: gray;
+            bottom: 24px;
+            margin-left: -76px;
+            margin-top: 12px;
+        }
+
+        .Message_input_icon_C {
+            font-size: x-large;
+            color: gray;
+            bottom: 24px;
+            margin-left: 10px;
+            margin-top: 12px;
+        }
+    }
+
+    .Mic_div {
+        color: white;
+        background: $heading;
+        font-size: x-large;
+        margin-left: 45px;
+        width: 46px;
+        height: 45px;
+        padding-left: 11px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}
+
+//-----------------------Status
+.Status {
+    .status_img{
+        @include status-img;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+&:hover{
+    color: black;
+}
+    }
+
+    .status_info {
+        h4 {
+            font-size: large;
+            margin-bottom: 0;
+        }
+        P{
+            color: gray
+        }
+    }
+    .status_body_img{
+        @include status-img;
+        border: 2px solid $heading;
+    }
+    .status__breakline{
+        color: #636363;
+        background: #eeebeb;
+        padding: 5px;
+
+        small{
+            font-weight: bold;
+        }
+    }
+    button{
+        position: fixed;
+    bottom: 18px;
+    right: 22px;
+    padding-bottom: 10px;
+    height: 55px;
+    width: 55px;
+    color: white;
+    background: $btn-succes;
+    border: none;
+    border-radius: 100px;
+    font-size: x-large;
+
+    a{
+        color:white;
+        &:hover{
+            color: white;
+        }
+    }
+    }
+}
+//-----------------calls
+.Calls{
+    button{
+        position: fixed;
+        bottom: 18px;
+        right: 22px;
+        padding-bottom: 5px;
+        height: 55px;
+        width: 55px;
+        color: white;
+        background: $btn-succes;
+        border: none;
+        border-radius: 100px;
+        font-size: x-large;
+
+        a{
+            color:white;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .call_img{
+        @include status-img;
+    }
+
+}
+//---------------ShowStatus
+.ShowStatus{
+    background: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+
+    a{
+        color: white;
+        &:hover{
+            color: white;
+        }
+    }
+    .showStatus_logo{
+        height: 45px;
+        width: 45px;
+        border-radius: 50px;
+        margin-top: 10px;
+    }
+    .showStatus_info{
+        h4 {
+            font-size: large;
+            margin-bottom: 0;
+        }
+        P{
+            color: gray
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        video {
+            position: absolute;
+            top: 95px;
+        }
+      }
+}
